@@ -1,0 +1,52 @@
+h1 , p {
+    margin: 0;
+}
+
+body{
+    background-image: url(resources/img/snow-bg.jpg);
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100dvh;
+    margin: 0;
+    font-size: 2rem;
+    color:#363e41;
+    text-align: center;    
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+.hero p{
+    font-family: 'Mountains of Christmas', serif;
+}
+
+.countdown{
+    margin-top: 2em;;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.time-card{
+    padding: 1.5em .5em;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .number{
+        margin-bottom: .5em;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .text{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+}
