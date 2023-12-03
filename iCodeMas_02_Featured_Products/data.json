@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 0,
+        "name" : "Christmas Tree Decoration",
+        "image": "tree.png",
+        "price": "$19.99",
+        "score": 4.5,
+        "label": "NEW"  ,
+        "description": "Perfect for azdding a festive touch to any space, this miniature tree brings the magic of Christmas right into your home, Crafted with care, it's a delightfull ..."
+    },
+    {
+        "id" : 1,
+        "name" : "Gift Decoration",
+        "image": "gift.png",
+        "price": "$8.99",
+        "score": 3.0,
+        "label": "",
+        "description": "Perfect for azdding a festive touch to any space, this miniature tree brings the magic of Christmas right into your home, Crafted with care, it's a delightfull ..."
+    },
+    {
+        "id" : 2,
+        "name" : "Gingerbread Cookie Decoration",
+        "image": "gingerbread_cookie.png",
+        "price": "$4.99",
+        "score": 3.5,
+        "label": "-23%"  ,
+        "description": "Perfect for azdding a festive touch to any space, this miniature tree brings the magic of Christmas right into your home, Crafted with care, it's a delightfull ..."
+    }
+]

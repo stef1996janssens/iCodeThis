@@ -1,0 +1,162 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+
+body{
+    background-image: url(resources/img/snow-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    margin: 0;
+    color:#121a23;
+    text-align: center;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #eaf4fc;
+}
+
+.container > .container{
+    max-width: 80%;
+}
+
+.flex{
+    display: flex;
+    gap: 2em;
+}
+
+.flex.column{
+    flex-direction: column;
+    gap: 0;
+}
+
+.flex.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.between{
+    justify-content: space-between;
+    align-items: start;
+}
+
+#featured-products{
+    padding-top: 2em;
+    border-radius: 10px;
+    padding: 4em;
+    flex-direction: column;
+    width: 80%;
+}
+
+.products{
+    margin: 50px 0;
+}
+
+.product{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    aspect-ratio: 1/1;
+}
+
+.product:hover, .product:focus, .product.active{
+    border: solid 3px #1d7297;
+}
+
+.product::before{
+    content: attr(data-before);
+    position: absolute;
+    width: 50px;
+    height: 2em;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product.new::before{
+    background-color: #1d7297;
+}
+
+.product.sale::before{
+    background-color: #e55951;
+}
+
+#product-detail{
+    height: 40%;
+    text-align: start;
+}
+
+#product-detail > *{
+    height: 300px;
+}
+
+.product.big{
+    width: 300px;
+}
+
+.product.big img{
+    zoom: 1.5;
+}
+
+.product.big:hover{
+    border: none;
+    cursor:auto;
+}
+
+#product-detail {
+    & h2{
+        margin-bottom: .5em;
+        font-size: 1.2rem;
+    }
+
+    .price{
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 1em;
+    }
+
+    .score{
+        gap: .25em;
+        margin-bottom: 1em;
+    }
+
+    .description{
+        opacity: .7;
+    }
+
+    .call-to-action{
+        background-color: #1d7297;
+        color: #fff;
+        font-size: .9rem;
+        padding: .5em 1em;
+        display: flex;
+        gap: .5em;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .call-to-action:hover{
+        opacity: .7;
+    }
+}
+
+
