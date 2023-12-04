@@ -22,9 +22,11 @@ body{
 
 .container{
     max-width: 60%;
+    ;
     display: flex;
     justify-content: center;
     background-color: #eaf4fc;
+    border-radius: 10px;
 }
 
 .container > .container{
@@ -152,6 +154,7 @@ body{
         gap: .5em;
         align-items: center;
         cursor: pointer;
+        margin-top: 1em;
     }
 
     .call-to-action:hover{
@@ -160,3 +163,50 @@ body{
 }
 
 
+.icon-tabler-star-filled, .icon-tabler-star-half-filled{
+    color: goldenrod;
+}
+
+@media  (max-width: 1400px) {
+    .container{
+        max-width: 80%;
+        padding: 1em;
+    }
+
+    .container > .container{
+        max-width: 95%;
+        
+    }
+
+    #featured-products{
+        padding: 1em;
+    }
+
+    #product-detail{
+        height: auto;
+    }
+
+    #product-detail > *{
+        height: auto;
+    }
+
+    .products{
+        margin: 1em 0;
+    }
+    
+    .product{
+        width: 75px;
+        height: 75px;
+
+
+        & img{
+            zoom: .5;
+        }
+    }
+
+    .product.big{
+        height: 200px;
+        width: 200px;
+        zoom: 1;
+    }
+}
