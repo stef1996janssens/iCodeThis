@@ -8,13 +8,11 @@ h1, h2, p{
 
 
 body{
-    background-image: url(resources/img/snow-bg.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     height: 100dvh;
     margin: 0;
+    background: #e55952;
     color:#121a23;
     text-align: center;    
     font-family: 'Roboto', sans-serif;
@@ -22,20 +20,23 @@ body{
 
 .container{
     max-width: 60%;
-    ;
-    display: flex;
-    justify-content: center;
     background-color: #eaf4fc;
     border-radius: 10px;
 }
 
-.container > .container{
-    max-width: 80%;
-}
-
 .flex{
     display: flex;
-    gap: 2em;
+    justify-content: flex-start;
+}
+
+.flex .col{
+    width: 100%;
+}
+
+.flex .col > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
 }
 
 .flex.column{
