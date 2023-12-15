@@ -1,0 +1,88 @@
+/*-------*/
+/* Reset */
+/*-------*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    text-align: center;    
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.body-content{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    height: 100dvh;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*-----------*/
+/* Modifiers */
+/*-----------*/
+
+.flex {
+    display: flex;
+    gap: var(--flex-gap);
+}
+
+.flex.column {
+    flex-direction: column;
+    gap: 0;
+}
+
+.flex.column.h-start{
+    align-items: start;
+}
+
+.flex.column.v-center{
+    justify-content: center;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.between {
+    justify-content: space-between;
+    align-items: start;
+}
+
+.flow>* {
+    margin-top: var(--flow-gap);
+}
+
+.flow--lg>* {
+    margin-top: calc(var(--flow-gap) * 2);
+}
+
+.btn--pill {
+    padding: .75em 1em;
+    font-size: .8rem;
+    cursor: pointer;
+    border-radius: 60rem;
+}
+
+.btn--pill:hover {
+    opacity: .75;
+}
+
+.btn--icon {
+    display: flex;
+    gap: .5rem;
+}

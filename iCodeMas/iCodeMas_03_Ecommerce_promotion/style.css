@@ -1,79 +1,25 @@
 :root{
+    --clr-background: #e55952;
     --clr-main: #b7bac1;
     --clr-accent: #33606a;
     --clr-accent-secondary: #227393;
     --clr-red: #bd241b;
     --clr-beige: #f4ebca;
+    --nav-clr-text: var(--clr-main);
 
     --flow-gap: 1em;
     
 }
 
-/*-------*/
-/* Reset */
-/*-------*/
-
-*, *::before, *::after{
-    box-sizing: border-box;
+.body-content{
+    background: var(--clr-background);
 }
-
-h1, h2, p{
-    margin: 0;
-}
-
-
-body{
-    display: grid;
-    place-items: center;
-    height: 100dvh;
-    margin: 0;
-    background: #e55952;
-    color:#121a23;
-    text-align: center;    
-    font-family: 'Roboto', sans-serif;
-}
-
-/*-----------*/
-/* Modifiers */
-/*-----------*/
 
 .container{
     max-width: 800px;
     background-color: #fff;
     border-radius: 10px;
 }
-
-.flex{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.flex.column{
-    flex-direction: column;
-    gap: 0;
-}
-
-.flex.center{
-    justify-content: center;
-    align-items: center;
-}
-
-.flex.between{
-    justify-content: space-between;
-    align-items: start;
-}
-
-.flow > * {
-    margin-top: var(--flow-gap);
-}
-
-.flow-lg > *  {
-    margin-top: calc(var(--flow-gap) * 2);
-}
-
-/*--------*/
-/* Custom */
-/*--------*/
 
 .col{
     width: 100%;

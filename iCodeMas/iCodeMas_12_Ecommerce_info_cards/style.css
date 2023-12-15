@@ -1,0 +1,42 @@
+:root {
+    --clr-background: #5b6979;
+    --clr-main: #b8ac9a;
+    --clr-accent: #473d2a;
+    --clr-accent-secondary: #227393;
+
+    --flow-gap: 1em;
+    --flex-gap: 1em;
+}
+
+.body-content{
+    background-color: var(--clr-background);
+}
+
+.info-card{
+    padding: .5em 1em;
+    width: 350px;
+}
+
+.info-card#shipping{
+    background-color: #fcf4cf;
+}
+
+.info-card#money-back {
+    background-color: #e2fdfa;
+}
+
+.info-card#support {
+    background-color: #fcdfcf;
+}
+
+.info-card-text{
+    & h2{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    & p{
+        font-size: .8rem;
+    }
+
+}

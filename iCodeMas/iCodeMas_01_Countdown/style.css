@@ -1,17 +1,21 @@
+:root{
+    --clr-background: var(--clr-secondary);
+    --clr-main: #fff;
+    --nav-clr-text: var(--clr-main);
+    --clr-secondary: #033139;
+}
+
 h1 , p {
     margin: 0;
 }
 
-body{
-    background-image: url(resources/img/snow-bg.jpg);
+.body-content{
+    background-image: url(https://icodethis.com/images/iCodeMas/snow_bg.png);
     background-size: cover;
-    display: grid;
     align-content: center;
     justify-content: center;
-    height: 100dvh;
-    margin: 0;
+    color:var(--clr-main);
     font-size: 2rem;
-    color:#363e41;
     text-align: center;    
     font-family: 'Roboto', sans-serif;
 }
@@ -29,12 +33,13 @@ h1{
     display: flex;
     justify-content: center;
     gap: .5em;
+    color: var(--clr-secondary);
 }
 
 .time-card{
     padding: 1.5em .5em;
     width: 150px;
-    background-color: #fff;
+    background-color:var(--clr-main);
     border-radius: 10px;
     display: flex;
     flex-direction: column;

@@ -1,28 +1,18 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-h1, h2, p{
-    margin: 0;
+:root{
+    --clr-background: var(--clr-secondary);
+    --nav-clr-text: #fff;
+    --clr-main: #121a23;
+    --clr-secondary: #033139;
 }
 
 
 body{
-    background-image: url(resources/img/snow-bg.jpg);
+    background-image: url(https://icodethis.com/images/iCodeMas/snow_bg.png);
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100dvh;
-    margin: 0;
-    color:#121a23;
-    text-align: center;    
-    font-family: 'Roboto', sans-serif;
 }
 
 .container{
     max-width: 60%;
-    ;
     display: flex;
     justify-content: center;
     background-color: #eaf4fc;
@@ -74,17 +64,18 @@ body{
     position: relative;
     width: 150px;
     aspect-ratio: 1/1;
+    border: solid 3px transparent;
 }
 
 .product:hover, .product:focus, .product.active{
-    border: solid 3px #1d7297;
+   border-color: #1d7297;
 }
 
 .product::before{
     content: attr(data-before);
     position: absolute;
     width: 50px;
-    height: 2em;
+    height: 25px;
     top: 0;
     left: 0;
     z-index: 2;
@@ -92,6 +83,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .product.new::before{
@@ -120,7 +112,6 @@ body{
 }
 
 .product.big:hover{
-    border: none;
     cursor:auto;
 }
 
@@ -175,7 +166,6 @@ body{
 
     .container > .container{
         max-width: 95%;
-        
     }
 
     #featured-products{

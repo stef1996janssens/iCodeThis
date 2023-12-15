@@ -1,0 +1,45 @@
+:root{
+    --clr-background: #5b6979;
+    --clr-main: #b8ac9a;
+    --clr-accent: #473d2a;
+    --clr-accent-secondary: #227393;
+    --nav-clr-text: var(--clr-main);
+
+    --flow-gap: 1em;
+    
+}
+
+.body-content{
+    background: var(--clr-background);
+}
+
+.container{
+    background-image: url(https://icodethis.com/images/iCodeMas/sale_banner.png);
+    background-size: cover;
+    padding: 8em;
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+h1{
+    max-width: 75%;
+    margin: 0 auto;
+    background: rgb(253,187,45);
+    background: linear-gradient(180deg, rgba(253,187,45,1) 0%, rgba(193,145,65,1) 50%, rgba(131,81,26,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: .8rem;
+    color: var(--clr-main);
+}
+
+.cta{
+    background-color: var(--clr-accent);
+    color: #fff;
+    font-weight: 400;
+}
