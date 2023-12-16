@@ -17,7 +17,7 @@
 .example{
     position: absolute;
     z-index: 10000;
-    width: 75%;
+    max-width: 50%;
     margin: 12em;
     border: solid #000 2px;
     border-radius: 10px;
