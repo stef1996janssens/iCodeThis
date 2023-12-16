@@ -18,11 +18,11 @@ function appendNavbar(){
         </ul>
     </nav>`
 
-    var $navContainer = $('body').prepend($nav);
+    $('body').prepend($nav);
 }
 
 function setActiveStyleToNavlink(){
-    $navLinks = $('.nav-link');
+    $navLinks = $('#main-nav').children('ul').children('li').children('.nav-link');
     $navLinks.each(function() {
         var windowHref = window.location.href.substring(window.location.href.slice(0, -1).lastIndexOf('/') + 1);
         var linkHref = $(this).attr('href').slice(3);

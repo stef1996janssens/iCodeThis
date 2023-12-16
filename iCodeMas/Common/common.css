@@ -1,3 +1,6 @@
+@import url(./navbar.css);
+@import url(./example.css);
+
 :root{
     --flex-gap: 2em;
 }
@@ -21,7 +24,6 @@ body{
     width: 100%;
     text-align: center;    
     font-family: 'Roboto', sans-serif;
-
 }
 
 .body-content{
@@ -31,6 +33,8 @@ body{
     height: 100dvh;
     margin: 0;
     background-color: var(--clr-background);
+    position: relative;
+    padding: 1em;
 }
 
 img{
@@ -62,8 +66,6 @@ img{
 .flex.column.h-start{
     align-items: start;
 }
-
-
 
 .flex.column.v-center{
     justify-content: center;

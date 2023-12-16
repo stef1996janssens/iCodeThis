@@ -1,0 +1,44 @@
+.example-icon{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    color: #000;
+    & i {
+       font-size: 2rem;
+    }
+}
+
+.example-icon:hover{
+    opacity: .65;
+    cursor: pointer;
+}
+
+
+.example{
+    position: absolute;
+    z-index: 10000;
+    width: 75%;
+    margin: 12em;
+    border: solid #000 2px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 6px 15px 0px #000;
+
+    & img{
+        border-radius: 10px;
+    }
+}
+
+.close-icon{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: #eb857b;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    opacity: .75;
+}
+
