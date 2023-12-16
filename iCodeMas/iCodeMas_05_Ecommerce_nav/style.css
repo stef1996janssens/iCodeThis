@@ -1,55 +1,93 @@
-*, *::before, *::after{
-    box-sizing: border-box;
+:root{
+    --clr-background: #1a7592;
+    --clr-background-nav: #fff;
+    --clr-cart-amount: #e45c4f;
+    --clr-bg-input: #eff3f6;
+    --clr-input: #c9cbd8;
+    --clr-notification: #fcd6cf;
 }
 
-h1, h2, p{
-    margin: 0;
-}
-
-
-body{
-    background-image: url(resources/img/snow-bg.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100dvh;
-    margin: 0;
-    color:#121a23;
-    text-align: center;    
-    font-family: 'Roboto', sans-serif;
+.body-content{
+    --clr-background: #1a7592;
 }
 
 .container{
-    max-width: 60%;
-    ;
-    display: flex;
-    justify-content: center;
-    background-color: #eaf4fc;
-    border-radius: 10px;
+    width: 80%;
+    container: container / inline-size;
 }
 
-.container > .container{
-    max-width: 80%;
+.notification{
+    padding: .25em;
+    font-size: .85rem;
+    background: var(--clr-notification);
 }
 
-.flex{
-    display: flex;
-    gap: 2em;
+.nav{
+    background-color: var(--clr-background-nav);
+    padding: 1em 2em;
+    gap: var(--flex-gap);
+    width: 100%;
 }
 
-.flex.column{
-    flex-direction: column;
-    gap: 0;
+.brand{
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-.flex.center{
-    justify-content: center;
-    align-items: center;
+.search{
+    position: relative;
+
+    & input{
+        padding: .75em 1.25em .75em 3em;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        background-color: var(--clr-bg-input);
+    }
+
+    & input::placeholder{
+        color: var(--clr-input);
+    }
+
+    & i{
+        position: absolute;
+        left: 1em;
+        top: .75em;
+    }
 }
 
-.flex.between{
-    justify-content: space-between;
-    align-items: start;
+.nav-links{
+    list-style: none;
+
+    .nav-link a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .nav-link:hover a{
+        opacity: .75;
+    }
 }
 
+.cart{
+    position: relative;
+}
+
+.cart:hover{
+    cursor: pointer;
+    opacity: .75;
+}
+
+.cart::before{
+    position: absolute;
+    content: '2';
+    top: .25em;
+    right: -1.25em;
+    background-color: var(--clr-cart-amount);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .25rem;
+    color: #fff;
+}

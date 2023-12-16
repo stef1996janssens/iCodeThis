@@ -3,7 +3,7 @@
     --nav-clr-main: #fff;
 }
 
-nav{
+#main-nav{
     height: 100dvh;
 
     background-color: color-mix(in srgb, var(--clr-background) 100%, #000 15%);
@@ -16,12 +16,12 @@ nav{
     align-items: start;
 }
 
-nav img{
+#main-nav img{
     width: 80px;
     height: 80px;
 }
 
-nav ul{
+#main-nav ul{
     list-style: none;
     padding: 0;
     padding: .75em;
@@ -29,19 +29,19 @@ nav ul{
     text-align: start;
 }
 
-nav ul li{
+#main-nav ul li{
     margin-bottom: .5em;
 }
 
-nav ul li a{
+#main-nav ul li a{
     text-decoration: none;
     color: var(--nav-clr-text, #fff) ;
 }
 
-nav ul li a.active{
+#main-nav ul li a.active{
     opacity: .5;
 }
 
-nav ul li:hover a{
+#main-nav ul li:hover a{
     opacity: .75;
 }

@@ -1,3 +1,8 @@
+:root{
+    --flex-gap: 2em;
+}
+
+
 /*-------*/
 /* Reset */
 /*-------*/
@@ -25,6 +30,7 @@ body{
     place-items: center;
     height: 100dvh;
     margin: 0;
+    background-color: var(--clr-background);
 }
 
 img{
@@ -40,6 +46,14 @@ img{
     gap: var(--flex-gap);
 }
 
+.flex.row{
+    flex-direction: row;
+}
+
+.flex.row.v-center{
+    align-items: center;
+}
+
 .flex.column {
     flex-direction: column;
     gap: 0;
@@ -48,6 +62,8 @@ img{
 .flex.column.h-start{
     align-items: start;
 }
+
+
 
 .flex.column.v-center{
     justify-content: center;
@@ -58,9 +74,20 @@ img{
     align-items: center;
 }
 
-.flex.between {
+.flex.h-end{
+    justify-content: end;
+}
+
+.flex.h-between {
     justify-content: space-between;
-    align-items: start;
+}
+
+.flex.h-around{
+    justify-content: space-around;
+}
+
+.full-width{
+    width: 100%;
 }
 
 .flow>* {

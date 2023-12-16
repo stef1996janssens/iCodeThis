@@ -11,10 +11,6 @@
     
 }
 
-.body-content{
-    background: var(--clr-background);
-}
-
 .container{
     max-width: 800px;
     background-color: #fff;

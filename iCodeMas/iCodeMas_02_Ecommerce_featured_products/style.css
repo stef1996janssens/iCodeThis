@@ -3,10 +3,11 @@
     --nav-clr-text: #fff;
     --clr-main: #121a23;
     --clr-secondary: #033139;
+    --flex-gap: 2em;
 }
 
 
-body{
+.body-content{
     background-image: url(https://icodethis.com/images/iCodeMas/snow_bg.png);
     background-size: cover;
 }
@@ -23,26 +24,6 @@ body{
     max-width: 80%;
 }
 
-.flex{
-    display: flex;
-    gap: 2em;
-}
-
-.flex.column{
-    flex-direction: column;
-    gap: 0;
-}
-
-.flex.center{
-    justify-content: center;
-    align-items: center;
-}
-
-.flex.between{
-    justify-content: space-between;
-    align-items: start;
-}
-
 #featured-products{
     padding-top: 2em;
     border-radius: 10px;
@@ -53,6 +34,7 @@ body{
 
 .products{
     margin: 50px 0;
+    gap: 1em;
 }
 
 .product{

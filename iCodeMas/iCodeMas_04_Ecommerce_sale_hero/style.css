@@ -9,10 +9,6 @@
     
 }
 
-.body-content{
-    background: var(--clr-background);
-}
-
 .container{
     background-image: url(https://icodethis.com/images/iCodeMas/sale_banner.png);
     background-size: cover;
